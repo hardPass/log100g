@@ -18,7 +18,7 @@
 * https://github.com/hardPass/log100g/blob/master/logMaxIP_notfinished.go
 
 	* 这个是 找出日志文件中ip的一个代码
-	* 这个代码读日志用的是bytes.Index...， file.read(b)
+	* 这个代码读日志用的是 file.read(b)，然后对内存 bytes.IndexByte...，
 	* 对了名字叫做notfinished，不要太在意，代码捣腾玩的，没啥规范
 	* 这个代码处理用时33分钟， 考虑io操作是大头，其实还可以考虑单线程顺序搞，速度会不会快点？
 	
